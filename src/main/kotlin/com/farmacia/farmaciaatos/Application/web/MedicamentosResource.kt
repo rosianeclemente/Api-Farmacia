@@ -33,11 +33,20 @@ class MedicamentosResource(@Autowired private val repository: MedicamentosReposi
     fun getDetail(@PathVariable("id") id:Long) =
         repository.getDetail(id).let { ResponseEntity.ok().body(FarmaciaResponse.from(it)) }
 
-    @DeleteMapping("/id")
-    fun deleteMedicamento(@PathVariable("id") id: Long) =
+    @DeleteMapping("/{id}")
+    fun deleteMedicamento(@PathVariable id: Long) =
         repository.delete(id).let {
         ResponseEntity.accepted().build<Void>()
     }
+    @PutMapping("{id}")
+    fun update(@Valid @RequestBody request: FarmaciaRequest, @PathVariable("id") id: Long) =
+        repository.getDetail(id)?.let {
+            FarmaciaRequest.to(it.id, request).apply {
+                repository.update(this)
+            }.let { ResponseEntity.ok().body(FarmaciaResponse.from(it))
+
+            }
+        }?: ResponseEntity.accepted().build<Void>()
 
 
 }

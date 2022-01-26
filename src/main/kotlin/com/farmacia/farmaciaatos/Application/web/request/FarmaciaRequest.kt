@@ -15,7 +15,7 @@ data class FarmaciaRequest(
         concentracao = concentracao
     )
     companion object {
-        fun to(id: Long, request: FarmaciaRequest) = Medicamentos(
+        fun to(id: Long?, request: FarmaciaRequest) = Medicamentos(
             id = request.id,
             nome = request.nome,
             tipo = request.tipo,

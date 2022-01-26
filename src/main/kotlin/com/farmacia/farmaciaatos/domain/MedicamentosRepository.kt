@@ -1,7 +1,5 @@
 package com.farmacia.farmaciaatos.domain
 
-
-
 interface MedicamentosRepository {
     fun getDetail(id: Long): Medicamentos
     fun getMedicamento(): List<Medicamentos>
