@@ -1,8 +1,8 @@
-package com.farmacia.farmaciaatos.Application.web
+package com.farmacia.farmaciaPatos.Application.web
 
-import com.farmacia.farmaciaatos.Application.web.request.FarmaciaRequest
-import com.farmacia.farmaciaatos.Application.web.response.FarmaciaResponse
-import com.farmacia.farmaciaatos.domain.MedicamentosRepository
+import com.farmacia.farmaciaPatos.Application.web.request.FarmaciaRequest
+import com.farmacia.farmaciaPatos.Application.web.response.FarmaciaResponse
+import com.farmacia.farmaciaPatos.domain.MedicamentosRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.transaction.annotation.Transactional

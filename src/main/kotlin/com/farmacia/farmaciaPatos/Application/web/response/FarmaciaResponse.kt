@@ -1,6 +1,6 @@
-package com.farmacia.farmaciaatos.Application.web.response
+package com.farmacia.farmaciaPatos.Application.web.response
 
-import com.farmacia.farmaciaatos.domain.Medicamentos
+import com.farmacia.farmaciaPatos.domain.Medicamentos
 
 data class FarmaciaResponse (
 

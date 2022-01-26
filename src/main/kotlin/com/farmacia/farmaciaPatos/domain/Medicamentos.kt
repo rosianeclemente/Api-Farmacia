@@ -1,4 +1,7 @@
-package com.farmacia.farmaciaatos.domain
+package com.farmacia.farmaciaPatos.domain
+
+import javax.persistence.Entity
+
 
 data class Medicamentos (
 

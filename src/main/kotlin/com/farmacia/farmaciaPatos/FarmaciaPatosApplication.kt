@@ -1,4 +1,4 @@
-package com.farmacia.farmaciaatos
+package com.farmacia.farmaciaPatos
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

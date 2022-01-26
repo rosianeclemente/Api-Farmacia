@@ -1,4 +1,4 @@
-package com.farmacia.farmaciaatos.domain
+package com.farmacia.farmaciaPatos.domain
 
 interface MedicamentosRepository {
     fun getDetail(id: Long): Medicamentos

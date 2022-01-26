@@ -1,7 +1,7 @@
-package com.farmacia.farmaciaatos.resource
+package com.farmacia.farmaciaPatos.resource
 
-import com.farmacia.farmaciaatos.domain.Medicamentos
-import com.farmacia.farmaciaatos.domain.MedicamentosRepository
+import com.farmacia.farmaciaPatos.domain.Medicamentos
+import com.farmacia.farmaciaPatos.domain.MedicamentosRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Component

@@ -1,10 +1,10 @@
-package com.farmacia.farmaciaatos.resource
+package com.farmacia.farmaciaPatos.resource
 
-import com.farmacia.farmaciaatos.domain.Medicamentos
+import com.farmacia.farmaciaPatos.domain.Medicamentos
 import javax.persistence.*
 
 @Entity
-@Table(name = "Farmacia")
+@Table(name = "FARMACIA")
 class MedicamentoEntity(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long?,

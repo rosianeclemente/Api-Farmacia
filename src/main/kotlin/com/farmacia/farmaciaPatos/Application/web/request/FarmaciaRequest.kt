@@ -1,6 +1,6 @@
-package com.farmacia.farmaciaatos.Application.web.request
+package com.farmacia.farmaciaPatos.Application.web.request
 
-import com.farmacia.farmaciaatos.domain.Medicamentos
+import com.farmacia.farmaciaPatos.domain.Medicamentos
 
 data class FarmaciaRequest(
     val id: Long? = null,

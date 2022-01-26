@@ -1,4 +1,4 @@
-package com.farmacia.farmaciaatos.resource
+package com.farmacia.farmaciaPatos.resource
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
