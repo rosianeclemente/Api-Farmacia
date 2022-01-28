@@ -38,7 +38,7 @@ class MedicamentosResource(@Autowired private val repository: MedicamentosReposi
         repository.delete(id).let {
         ResponseEntity.accepted().build<Void>()
     }
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     fun update(@Valid @RequestBody request: FarmaciaRequest, @PathVariable("id") id: Long) =
         repository.getDetail(id)?.let {
             FarmaciaRequest.to(it.id, request).apply {
